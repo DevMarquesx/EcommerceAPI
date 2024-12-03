@@ -1,0 +1,74 @@
+/* Para garantir que a tela ocupe toda a altura */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Cor de fundo principal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal com flexbox */
+.detalhes-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    height: 90vh; /* Ocupa 90% da altura da tela */
+    background-color: #242424; /* Cor de fundo secundária */
+    border-radius: 8px;
+    overflow: hidden;
+    flex-wrap: wrap; /* Permite que a descrição vá para baixo se necessário */
+    padding: 20px;
+}
+
+/* Imagem do produto */
+.produto-imagem {
+    flex: 1;
+    width: 50%; /* Limita a largura da imagem */
+    height: 100%;
+    margin-right: 20px;
+}
+
+.produto-imagem img {
+    width: 100%;
+    height: 60vh; /* A imagem ocupará 60% da altura da tela */
+    object-fit: cover; /* Faz a imagem preencher a área sem distorcer */
+    border-radius: 8px;
+}
+
+/* Informações do produto à direita */
+.produto-info {
+    flex: 2;
+    color: #fff;
+    max-width: 600px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Nome do produto */
+#nomeProduto {
+    font-size: 60px; /* Tamanho maior para o título */
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Preço do produto em verde */
+#precoProduto {
+    font-size: 30px; /* Tamanho maior */
+    font-weight: bold;
+    color: #00FF66; /* Verde */
+    margin-bottom: 10px; /* Reduz o espaçamento abaixo do preço */
+}
+
+/* Descrição do produto */
+#descricaoProduto {
+    font-size: 20px; /* Tamanho maior */
+    color: #ddd;
+    line-height: 1.6;
+    margin-top: 10px; /* Aproxima a descrição da foto */
+    width: 100%;
+}
